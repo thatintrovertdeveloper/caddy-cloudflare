@@ -9,10 +9,8 @@ RUN xcaddy build \
     --with github.com/hslatman/caddy-crowdsec-bouncer/http \
     --with github.com/hslatman/caddy-crowdsec-bouncer/appsec \
     --with github.com/porech/caddy-maxmind-geolocation \
-    --with github.com/greenpau/caddy-security \
     --with github.com/lucaslorentz/caddy-docker-proxy/v2 \
-    --with github.com/mholt/caddy-ratelimit \
-    --with github.com/sablierapp/sablier-caddy-plugin
+    --with github.com/mholt/caddy-ratelimit
 
 # Final stage
 FROM caddy:${CADDY_VERSION}
